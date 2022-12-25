@@ -1,0 +1,21 @@
+.banner-container {
+    height: 545px;
+    background-image: url(../../../images/banner/homeBanner.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-banner {
+    background: rgba(39, 62, 84, 0.486);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+}
+
+.header-card {
+    position: relative;
+    bottom: 50px;
+    height: 150px;
+    padding: 20px 15px;
+}
