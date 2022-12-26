@@ -1,13 +1,15 @@
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import countries from '../../../FakeDaata/Country.FakeData';
 import Country from '../Country/Country';
 import './CountryList';
 
 const CountryList = () => {
+    const navigate = useNavigate();
     const handleCountryDetails = (id) => {
-        console.log(id);
+        navigate("countryDetails/" + id)
     }
     return (
         <div className='container country-list text-center'>

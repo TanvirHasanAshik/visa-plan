@@ -1,9 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import services from '../../../FakeDaata/Service.FakeData';
 import Service from '../Service/Service';
 import './AllServices.css';
 
 const AllServices = () => {
+    const navigate = useNavigate();
+    const handleServices = (id) => {
+        navigate(`/serviceDetails/service/${id}`);
+    }
     return (
         <div className='container mt-5 pt-2'>
             <div className="row text-center d-flex justify-content-center">
@@ -18,6 +23,7 @@ const AllServices = () => {
                     services.map(service => <Service
                         key={service.id}
                         service={service}
+                        handleServices={handleServices}
                     ></Service>)
                 }
             </div>

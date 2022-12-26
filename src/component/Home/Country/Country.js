@@ -1,7 +1,5 @@
-
 import './Country.css';
 const Country = ({ country, handleCountryDetails }) => {
-    console.log(country);
     const { name, description, image, id } = country;
 
     return (
